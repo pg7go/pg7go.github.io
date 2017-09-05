@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="HLM,自制,游戏,Unity," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="HLM 开发日志 说明  前言：　　这些日志为word文档上搬过来的　　有些gif图已经找不到了，虽然有备份，这里不复原了">
+<meta name="keywords" content="HLM,自制,游戏,Unity">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HLM 开发日志 Word-01">
+<meta property="og:url" content="http://yoursite.com/2016/08/05/HLM 开发日志 Word-01/index.html">
+<meta property="og:site_name" content="PG7GO">
+<meta property="og:description" content="HLM 开发日志 说明  前言：　　这些日志为word文档上搬过来的　　有些gif图已经找不到了，虽然有备份，这里不复原了">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://pg7go.wicp.net/16/8/03cut.jpg">
+<meta property="og:image" content="http://pg7go.wicp.net/16/8/020-0.png">
+<meta property="og:image" content="http://pg7go.wicp.net/16/8/020-1.png">
+<meta property="og:updated_time" content="2016-09-24T10:50:08.335Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HLM 开发日志 Word-01">
+<meta name="twitter:description" content="HLM 开发日志 说明  前言：　　这些日志为word文档上搬过来的　　有些gif图已经找不到了，虽然有备份，这里不复原了">
+<meta name="twitter:image" content="http://pg7go.wicp.net/16/8/03cut.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/08/05/HLM 开发日志 Word-01/"/>
+
+
+
+
+
+  <title>HLM 开发日志 Word-01 | PG7GO</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">PG7GO</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">不时更新，电脑访问效果更佳</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/2016/08/05/介绍/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-hlm">
+          <a href="/categories/HLM-开发日志/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-folder"></i> <br />
+            
+            HLM 开发日志
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/08/05/HLM 开发日志 Word-01/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="PG7GO">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://ss0.bdstatic.com/7Ls0a8Sm1A5BphGlnYG/sys/portrait/item/677b706737676f4710">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="PG7GO">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">HLM 开发日志 Word-01</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-08-05T21:49:24+08:00">
+                2016-08-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/HLM-开发日志/" itemprop="url" rel="index">
+                    <span itemprop="name">HLM-开发日志</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/08/05/HLM 开发日志 Word-01/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2016/08/05/HLM 开发日志 Word-01/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv">收集眼珠子 <i class="fa fa-eye"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>个
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="HLM-开发日志-说明"><a href="#HLM-开发日志-说明" class="headerlink" title="HLM 开发日志 说明"></a>HLM 开发日志 说明</h1><p><img src="http://pg7go.wicp.net/16/8/03cut.jpg" alt="hlm"></p>
+<blockquote>
+<p>前言：<br>　　这些日志为word文档上搬过来的<br>　　有些gif图已经找不到了，虽然有备份，这里不复原了</p>
+</blockquote>
+<a id="more"></a>
+<p><br></p>
+<blockquote>
+<h1 id="建议从第一篇看起-点击此处查看此系列"><a href="#建议从第一篇看起-点击此处查看此系列" class="headerlink" title="建议从第一篇看起,点击此处查看此系列"></a><a href="/categories/HLM-开发日志/" title="点击此处查看此系列">建议从第一篇看起,点击此处查看此系列</a></h1><p><br></p>
+</blockquote>
+<p>前两个星期的没写<br>大约是：<br>试着导入贴图<br>    2D DynamicLight插件→视野<br>    Animator 移动与攻击<br>    地图用截图贴图<br>大约就是这些，忽略的不再加上了</p>
+<h1 id="2016年3月12日星期六"><a href="#2016年3月12日星期六" class="headerlink" title="2016年3月12日星期六"></a>2016年3月12日星期六</h1><h2 id="2016-3-12-19-03-33："><a href="#2016-3-12-19-03-33：" class="headerlink" title="2016-3-12 19:03:33："></a>2016-3-12 19:03:33：</h2><p>Photoshop改图-皮肤</p>
+<h2 id="2016-3-12-19-50-46："><a href="#2016-3-12-19-50-46：" class="headerlink" title="2016-3-12 19:50:46："></a>2016-3-12 19:50:46：</h2><p>导入UNITY</p>
+<h2 id="2016-3-12-20-16-05："><a href="#2016-3-12-20-16-05：" class="headerlink" title="2016-3-12 20:16:05："></a>2016-3-12 20:16:05：</h2><p>了解LAYER</p>
+<h2 id="2016-3-12-20-50-45："><a href="#2016-3-12-20-50-45：" class="headerlink" title="2016-3-12 20:50:45："></a>2016-3-12 20:50:45：</h2><p>动画导入处理完成</p>
+<h2 id="2016-3-12-23-01-52："><a href="#2016-3-12-23-01-52：" class="headerlink" title="2016-3-12 23:01:52："></a>2016-3-12 23:01:52：</h2><p>额，拾起，丢出完成</p>
+<h2 id="2016-3-12-23-53-12："><a href="#2016-3-12-23-53-12：" class="headerlink" title="2016-3-12 23:53:12："></a>2016-3-12 23:53:12：</h2><p>收工</p>
+<h1 id="2016年3月13日星期日"><a href="#2016年3月13日星期日" class="headerlink" title="2016年3月13日星期日"></a>2016年3月13日星期日</h1><h2 id="08-52-33"><a href="#08-52-33" class="headerlink" title="08:52:33:"></a>08:52:33:</h2><p>开始开发</p>
+<h2 id="10-20-57"><a href="#10-20-57" class="headerlink" title="10:20:57:"></a>10:20:57:</h2><p>完成拾起与动画修复<br>射击完成（未加入判断）</p>
+<p>[图片：0.gif]</p>
+<h2 id="10-24-43"><a href="#10-24-43" class="headerlink" title="10:24:43:"></a>10:24:43:</h2><p>做作业……</p>
+<h2 id="12-17-16"><a href="#12-17-16" class="headerlink" title="12:17:16:"></a>12:17:16:</h2><p>饭后<br>现在开始弄其他的PS了</p>
+<h2 id="14-01-01"><a href="#14-01-01" class="headerlink" title="14:01:01:"></a>14:01:01:</h2><p>大约2个小时……<br>做做作业了</p>
+<h2 id="14-06-26"><a href="#14-06-26" class="headerlink" title="14:06:26:"></a>14:06:26:</h2><p>放弃做作业，开始开发</p>
+<h2 id="15-17-08"><a href="#15-17-08" class="headerlink" title="15:17:08:"></a>15:17:08:</h2><p>拳击倒地与LAYER移动完成<br>物品反弹完成</p>
+<h2 id="15-29-29"><a href="#15-29-29" class="headerlink" title="15:29:29:"></a>15:29:29:</h2><p>Animator 问题 无法播放某一帧</p>
+<h2 id="16-43-36"><a href="#16-43-36" class="headerlink" title="16:43:36:"></a>16:43:36:</h2><p>解决不了，暴力解决:sprite render来渲染OK<br>【1.gif】<br>Bug很多，解决太难……<br>不动时脚出现的BUG</p>
+<h2 id="16-57-47"><a href="#16-57-47" class="headerlink" title="16:57:47:"></a>16:57:47:</h2><p>刚刚把那个BUG解决了- -<br>时间不多了<br>[2.gif]<br>这个GIF不能动……</p>
+<h2 id="17-39-37"><a href="#17-39-37" class="headerlink" title="17:39:37:"></a>17:39:37:</h2><p>[2-2.gif]<br>投掷中人实现！<br>开发结束</p>
+<h2 id="21-45-02"><a href="#21-45-02" class="headerlink" title="21:45:02:"></a>21:45:02:</h2><p>用了接近20分钟<br>解决一些BUG，声明了死亡函数<br>真·开发结束</p>
+<hr>
+<h1 id="2016年3月19日-星期六"><a href="#2016年3月19日-星期六" class="headerlink" title="2016年3月19日 星期六"></a>2016年3月19日 星期六</h1><p>前几天更新内容：<br>Weapon OwnId → Gameobject<br>开枪用射线判断，不穿墙<br>长按右键放下枪<br>拾起可能失败 → 修复<br>倒下掉落武器<br>倒地加速度<br>Bullet问题<br>子物体做方向判断<br>Vector2 旋转<br>以上为前几天所做</p>
+<h2 id="19-08-11"><a href="#19-08-11" class="headerlink" title="19:08:11:"></a>19:08:11:</h2><p>处理google翻墙</p>
+<blockquote>
+<p>“一切正常，你可以访问真正的互联网了。”</p>
+</blockquote>
+<h2 id="19-42-21"><a href="#19-42-21" class="headerlink" title="19:42:21:"></a>19:42:21:</h2><p>浪费了2个小时<br>开始开发</p>
+<h2 id="20-13-11"><a href="#20-13-11" class="headerlink" title="20:13:11:"></a>20:13:11:</h2><p>分离出素材</p>
+<h2 id="20-53-04"><a href="#20-53-04" class="headerlink" title="20:53:04:"></a>20:53:04:</h2><p>射线不成功</p>
+<h2 id="21-33-18"><a href="#21-33-18" class="headerlink" title="21:33:18:"></a>21:33:18:</h2><p>射线成功，Layer存在问题</p>
+<h2 id="21-56-51"><a href="#21-56-51" class="headerlink" title="21:56:51:"></a>21:56:51:</h2><p>Layer成功，又遇到其他问题（用射线拾起问题，发现无法拾起）</p>
+<h2 id="22-09-33"><a href="#22-09-33" class="headerlink" title="22:09:33:"></a>22:09:33:</h2><p>BUGS修复完毕<br><img src="http://pg7go.wicp.net/16/8/020-0.png" alt="0-0"><br>原因是之前改过代码后没保存</p>
+<p>拾起射程减半前的图</p>
+<h2 id="23-07-54"><a href="#23-07-54" class="headerlink" title="23:07:54:"></a>23:07:54:</h2><p>Bug修复，拾起按照原来方法- -</p>
+<h2 id="23-20-40"><a href="#23-20-40" class="headerlink" title="23:20:40:"></a>23:20:40:</h2><p>BUG修复*2 用遍历方法<br>快结束了<br>只完成了2/9个目标</p>
+<h2 id="00-18-03"><a href="#00-18-03" class="headerlink" title="00:18:03:"></a>00:18:03:</h2><p>奋力一赶<br><img src="http://pg7go.wicp.net/16/8/020-1.png" alt="0-1"><br>完成 5/9 个目标</p>
+<p>截图没截下来，外面有一层白框<br>UI还有一点点屏幕适应问题<br>OK，今天开发终止</p>
+<h2 id="00-26-04"><a href="#00-26-04" class="headerlink" title="00:26:04:"></a>00:26:04:</h2><p>等等，刚刚看了下，白框居然是Gizmos开着造成的</p>
+<h2 id="真·终止"><a href="#真·终止" class="headerlink" title="真·终止"></a>真·终止</h2><h1 id="2016年3月20日-星期日"><a href="#2016年3月20日-星期日" class="headerlink" title="2016年3月20日 星期日"></a>2016年3月20日 星期日</h1><p>开始开发</p>
+<h2 id="11-57-17"><a href="#11-57-17" class="headerlink" title="11:57:17:"></a>11:57:17:</h2><p>半开发状态</p>
+<h2 id="12-38-56"><a href="#12-38-56" class="headerlink" title="12:38:56:"></a>12:38:56:</h2><p>枪支添加成功<br>Shotguan Pipe Silencer Uzi<br>UI自适应完成</p>
+<h2 id="14-24-07"><a href="#14-24-07" class="headerlink" title="14:24:07:"></a>14:24:07:</h2><p>纠结死了<br>大多数动画完成<br>各种修复完成</p>
+<h2 id="14-43-55"><a href="#14-43-55" class="headerlink" title="14:43:55:"></a>14:43:55:</h2><p>吐血AGAIN</p>
+<h2 id="14-46-49"><a href="#14-46-49" class="headerlink" title="14:46:49:"></a>14:46:49:</h2><p>突然想通了</p>
+<h2 id="14-56-55"><a href="#14-56-55" class="headerlink" title="14:56:55:"></a>14:56:55:</h2><p>[3.gif]<br>[4.gif]<br>两张GIF<br>一部分内容终于做好了，BUG已处理<br>开发暂一告落</p>
+<h2 id="15-06-23"><a href="#15-06-23" class="headerlink" title="15:06:23:"></a>15:06:23:</h2><p>刚刚修复随机BUG（随机SHOTGUN FLY等）<br>停止开发，做作业</p>
+<h2 id="17-32-25"><a href="#17-32-25" class="headerlink" title="17:32:25:"></a>17:32:25:</h2><p>什么也没做</p>
+<h2 id="开发结束"><a href="#开发结束" class="headerlink" title="开发结束"></a>开发结束</h2><h1 id="2016年3月26日-星期六"><a href="#2016年3月26日-星期六" class="headerlink" title="2016年3月26日 星期六"></a>2016年3月26日 星期六</h1><h2 id="18-54-26"><a href="#18-54-26" class="headerlink" title="18:54:26:"></a>18:54:26:</h2><p>开始开发<br>刀范围修复</p>
+<h2 id="19-49-03"><a href="#19-49-03" class="headerlink" title="19:49:03:"></a>19:49:03:</h2><p>Word文档占用内存800+MB吓到我了</p>
+<blockquote>
+<p>未完，请看：HLM 开发日志 Word-01</p>
+</blockquote>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/HLM/" rel="tag"># HLM</a>
+          
+            <a href="/tags/自制/" rel="tag"># 自制</a>
+          
+            <a href="/tags/游戏/" rel="tag"># 游戏</a>
+          
+            <a href="/tags/Unity/" rel="tag"># Unity</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/08/05/介绍/" rel="next" title="我新网站的介绍">
+                <i class="fa fa-chevron-left"></i> 我新网站的介绍
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/08/05/HLM 开发日志 Word-02/" rel="prev" title="HLM 开发日志 Word-02">
+                HLM 开发日志 Word-02 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="https://ss0.bdstatic.com/7Ls0a8Sm1A5BphGlnYG/sys/portrait/item/677b706737676f4710"
+               alt="PG7GO" />
+          <p class="site-author-name" itemprop="name">PG7GO</p>
+           
+              <p class="site-description motion-element" itemprop="description">Indie</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/pg7go" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                    
+                      Twitter
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://facebook.com/pg7go" target="_blank" title="FaceBook">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                    
+                      FaceBook
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/pg7go" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                    
+                      GitHub
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="Mailto:test@163.com" target="_blank" title="邮箱">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                    
+                      邮箱
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://wpa.qq.com/msgrd?v=3&uin=1025385065&site=qq&menu=yes" target="_blank" title="QQ">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                    
+                      QQ
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.baidu.com/p/pg7go" target="_blank" title="贴吧">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                    
+                      贴吧
+                    
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HLM-开发日志-说明"><span class="nav-number">1.</span> <span class="nav-text">HLM 开发日志 说明</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#建议从第一篇看起-点击此处查看此系列"><span class="nav-number">2.</span> <span class="nav-text">建议从第一篇看起,点击此处查看此系列</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2016年3月12日星期六"><span class="nav-number">3.</span> <span class="nav-text">2016年3月12日星期六</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2016-3-12-19-03-33："><span class="nav-number">3.1.</span> <span class="nav-text">2016-3-12 19:03:33：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2016-3-12-19-50-46："><span class="nav-number">3.2.</span> <span class="nav-text">2016-3-12 19:50:46：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2016-3-12-20-16-05："><span class="nav-number">3.3.</span> <span class="nav-text">2016-3-12 20:16:05：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2016-3-12-20-50-45："><span class="nav-number">3.4.</span> <span class="nav-text">2016-3-12 20:50:45：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2016-3-12-23-01-52："><span class="nav-number">3.5.</span> <span class="nav-text">2016-3-12 23:01:52：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2016-3-12-23-53-12："><span class="nav-number">3.6.</span> <span class="nav-text">2016-3-12 23:53:12：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2016年3月13日星期日"><span class="nav-number">4.</span> <span class="nav-text">2016年3月13日星期日</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#08-52-33"><span class="nav-number">4.1.</span> <span class="nav-text">08:52:33:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-20-57"><span class="nav-number">4.2.</span> <span class="nav-text">10:20:57:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-24-43"><span class="nav-number">4.3.</span> <span class="nav-text">10:24:43:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#12-17-16"><span class="nav-number">4.4.</span> <span class="nav-text">12:17:16:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#14-01-01"><span class="nav-number">4.5.</span> <span class="nav-text">14:01:01:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#14-06-26"><span class="nav-number">4.6.</span> <span class="nav-text">14:06:26:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#15-17-08"><span class="nav-number">4.7.</span> <span class="nav-text">15:17:08:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#15-29-29"><span class="nav-number">4.8.</span> <span class="nav-text">15:29:29:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#16-43-36"><span class="nav-number">4.9.</span> <span class="nav-text">16:43:36:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#16-57-47"><span class="nav-number">4.10.</span> <span class="nav-text">16:57:47:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#17-39-37"><span class="nav-number">4.11.</span> <span class="nav-text">17:39:37:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#21-45-02"><span class="nav-number">4.12.</span> <span class="nav-text">21:45:02:</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2016年3月19日-星期六"><span class="nav-number">5.</span> <span class="nav-text">2016年3月19日 星期六</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#19-08-11"><span class="nav-number">5.1.</span> <span class="nav-text">19:08:11:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#19-42-21"><span class="nav-number">5.2.</span> <span class="nav-text">19:42:21:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#20-13-11"><span class="nav-number">5.3.</span> <span class="nav-text">20:13:11:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#20-53-04"><span class="nav-number">5.4.</span> <span class="nav-text">20:53:04:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#21-33-18"><span class="nav-number">5.5.</span> <span class="nav-text">21:33:18:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#21-56-51"><span class="nav-number">5.6.</span> <span class="nav-text">21:56:51:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#22-09-33"><span class="nav-number">5.7.</span> <span class="nav-text">22:09:33:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#23-07-54"><span class="nav-number">5.8.</span> <span class="nav-text">23:07:54:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#23-20-40"><span class="nav-number">5.9.</span> <span class="nav-text">23:20:40:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#00-18-03"><span class="nav-number">5.10.</span> <span class="nav-text">00:18:03:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#00-26-04"><span class="nav-number">5.11.</span> <span class="nav-text">00:26:04:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#真·终止"><span class="nav-number">5.12.</span> <span class="nav-text">真·终止</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2016年3月20日-星期日"><span class="nav-number">6.</span> <span class="nav-text">2016年3月20日 星期日</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#11-57-17"><span class="nav-number">6.1.</span> <span class="nav-text">11:57:17:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#12-38-56"><span class="nav-number">6.2.</span> <span class="nav-text">12:38:56:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#14-24-07"><span class="nav-number">6.3.</span> <span class="nav-text">14:24:07:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#14-43-55"><span class="nav-number">6.4.</span> <span class="nav-text">14:43:55:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#14-46-49"><span class="nav-number">6.5.</span> <span class="nav-text">14:46:49:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#14-56-55"><span class="nav-number">6.6.</span> <span class="nav-text">14:56:55:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#15-06-23"><span class="nav-number">6.7.</span> <span class="nav-text">15:06:23:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#17-32-25"><span class="nav-number">6.8.</span> <span class="nav-text">17:32:25:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开发结束"><span class="nav-number">6.9.</span> <span class="nav-text">开发结束</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2016年3月26日-星期六"><span class="nav-number">7.</span> <span class="nav-text">2016年3月26日 星期六</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#18-54-26"><span class="nav-number">7.1.</span> <span class="nav-text">18:54:26:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#19-49-03"><span class="nav-number">7.2.</span> <span class="nav-text">19:49:03:</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">PG7GO</span>
+</div>
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      你好，第
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      个小伙伴
+    </span>
+  
+
+  
+    <span class="site-pv">
+      这里已经被逛了
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次
+    </span>
+  
+</div>
+
+
+        
+      </div>
+    </footer>
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://pg7go.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://yoursite.com/2016/08/05/HLM 开发日志 Word-01/';
+          this.page.identifier = '2016/08/05/HLM 开发日志 Word-01/';
+          this.page.title = 'HLM 开发日志 Word-01';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://pg7go.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

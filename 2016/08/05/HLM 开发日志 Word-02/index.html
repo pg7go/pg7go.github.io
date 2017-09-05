@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="HLM,自制,游戏,Unity," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="HLM 开发日志 续  前言：　　上一篇：HLM 开发日志 Word-01　　先去看第一篇">
+<meta name="keywords" content="HLM,自制,游戏,Unity">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HLM 开发日志 Word-02">
+<meta property="og:url" content="http://yoursite.com/2016/08/05/HLM 开发日志 Word-02/index.html">
+<meta property="og:site_name" content="PG7GO">
+<meta property="og:description" content="HLM 开发日志 续  前言：　　上一篇：HLM 开发日志 Word-01　　先去看第一篇">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://pg7go.wicp.net/16/8/03cut.jpg">
+<meta property="og:updated_time" content="2016-09-24T10:50:08.339Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HLM 开发日志 Word-02">
+<meta name="twitter:description" content="HLM 开发日志 续  前言：　　上一篇：HLM 开发日志 Word-01　　先去看第一篇">
+<meta name="twitter:image" content="http://pg7go.wicp.net/16/8/03cut.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/08/05/HLM 开发日志 Word-02/"/>
+
+
+
+
+
+  <title>HLM 开发日志 Word-02 | PG7GO</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">PG7GO</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">不时更新，电脑访问效果更佳</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/2016/08/05/介绍/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-hlm">
+          <a href="/categories/HLM-开发日志/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-folder"></i> <br />
+            
+            HLM 开发日志
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/08/05/HLM 开发日志 Word-02/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="PG7GO">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://ss0.bdstatic.com/7Ls0a8Sm1A5BphGlnYG/sys/portrait/item/677b706737676f4710">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="PG7GO">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">HLM 开发日志 Word-02</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-08-05T23:32:12+08:00">
+                2016-08-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/HLM-开发日志/" itemprop="url" rel="index">
+                    <span itemprop="name">HLM-开发日志</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/08/05/HLM 开发日志 Word-02/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2016/08/05/HLM 开发日志 Word-02/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv">收集眼珠子 <i class="fa fa-eye"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>个
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="HLM-开发日志-续"><a href="#HLM-开发日志-续" class="headerlink" title="HLM 开发日志 续"></a>HLM 开发日志 续</h1><p><img src="http://pg7go.wicp.net/16/8/03cut.jpg" alt="hlm"></p>
+<blockquote>
+<p>前言：<br>　　上一篇：HLM 开发日志 Word-01<br>　　先去看第一篇</p>
+</blockquote>
+<a id="more"></a>
+<p><br></p>
+<blockquote>
+<h1 id="建议从第一篇看起-点击此处查看此系列"><a href="#建议从第一篇看起-点击此处查看此系列" class="headerlink" title="建议从第一篇看起,点击此处查看此系列"></a><a href="/categories/HLM-开发日志/" title="点击此处查看此系列">建议从第一篇看起,点击此处查看此系列</a></h1><p><br></p>
+</blockquote>
+<h1 id="2016年7月31日"><a href="#2016年7月31日" class="headerlink" title="2016年7月31日"></a>2016年7月31日</h1><h2 id="08-44-00"><a href="#08-44-00" class="headerlink" title="08:44:00:"></a>08:44:00:</h2><p>修正word文档占用问题→将所有GIF图替换掉<br>以下内容转自“开发日志替代版.txt”<br>日期？</p>
+<hr>
+<h2 id="21-52-14"><a href="#21-52-14" class="headerlink" title="21:52:14:"></a>21:52:14:</h2><p>学习并测试了A*插件</p>
+<h2 id="23-32-12"><a href="#23-32-12" class="headerlink" title="23:32:12:"></a>23:32:12:</h2><p>很多问题未解决<br>没时间了</p>
+<h2 id="23-53-37"><a href="#23-53-37" class="headerlink" title="23:53:37:"></a>23:53:37:</h2><p>总结：<br>修复了小bugs<br>会用A*基础<br>开发终结</p>
+<hr>
+<h1 id="2016年3月27日-星期日"><a href="#2016年3月27日-星期日" class="headerlink" title="2016年3月27日 星期日"></a>2016年3月27日 星期日</h1><p>10:14:03:<br>实际开发实际还要早些<br>正在开发AI</p>
+<h2 id="11-09-19"><a href="#11-09-19" class="headerlink" title="11:09:19:"></a>11:09:19:</h2><p>开发……</p>
+<h2 id="11-39-47"><a href="#11-39-47" class="headerlink" title="11:39:47:"></a>11:39:47:</h2><p>找路完成，有个问题就是出了背景区域后射线不能正常工作？</p>
+<h2 id="12-37-22"><a href="#12-37-22" class="headerlink" title="12:37:22:"></a>12:37:22:</h2><p>解决问题<br>Physics2D.Raycast→Physics2D.Linecast<br>全部的BUG应该解决了</p>
+<h2 id="16-20-06"><a href="#16-20-06" class="headerlink" title="16:20:06:"></a>16:20:06:</h2><p>AI起步完成</p>
+<h2 id="17-15-18"><a href="#17-15-18" class="headerlink" title="17:15:18:"></a>17:15:18:</h2><p>修复一大波BUG<br>包括AI的动作修复<br>以及倒地移动<br>然后<br>开发结束</p>
+<hr>
+<h1 id="2016年3月28日-星期一"><a href="#2016年3月28日-星期一" class="headerlink" title="2016年3月28日 星期一"></a>2016年3月28日 星期一</h1><h2 id="09-54-17"><a href="#09-54-17" class="headerlink" title="09:54:17:"></a>09:54:17:</h2><p>更新血<br>结束开发</p>
+<hr>
+<h1 id="2016年4月2日-星期六"><a href="#2016年4月2日-星期六" class="headerlink" title="2016年4月2日 星期六"></a>2016年4月2日 星期六</h1><h2 id="22-14-45"><a href="#22-14-45" class="headerlink" title="22:14:45:"></a>22:14:45:</h2><p>搞忘写了，<br>更新小地方<br>FixActions()<br>优化与修复<br>尸体递增层数，递增掩盖<br>进一步修复血？</p>
+<h2 id="00-16-31"><a href="#00-16-31" class="headerlink" title="00:16:31:"></a>00:16:31:</h2><p>问题：<br>1.DIESOON位移<br>2.钝器血</p>
+<hr>
+<h1 id="2016年4月3日-星期日"><a href="#2016年4月3日-星期日" class="headerlink" title="2016年4月3日 星期日"></a>2016年4月3日 星期日</h1><h2 id="08-13-55"><a href="#08-13-55" class="headerlink" title="08:13:55:"></a>08:13:55:</h2><p>开始开发<br>修复昨天问题<br>ACTION修复动作<br>血-全部完成</p>
+<h2 id="09-01-48"><a href="#09-01-48" class="headerlink" title="09:01:48:"></a>09:01:48:</h2><p>下一步，处决</p>
+<h2 id="11-21-52"><a href="#11-21-52" class="headerlink" title="11:21:52:"></a>11:21:52:</h2><p>发帖，导出贴图，修改贴图，导入UNITY3D<br>尝试左右切换动作，能实现，但是会很累，暂时放弃</p>
+<h2 id="14-17-22"><a href="#14-17-22" class="headerlink" title="14:17:22:"></a>14:17:22:</h2><p>完成全部处决内容！</p>
+<h2 id="15-29-34"><a href="#15-29-34" class="headerlink" title="15:29:34:"></a>15:29:34:</h2><p>睡醒</p>
+<h2 id="17-05-31"><a href="#17-05-31" class="headerlink" title="17:05:31:"></a>17:05:31:</h2><p>玩弄了会儿插件</p>
+<h2 id="19-01-52"><a href="#19-01-52" class="headerlink" title="19:01:52:"></a>19:01:52:</h2><p>AI工作，问题太多</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div></pre></td><td class="code"><pre><div class="line">case states.attack:</div><div class="line">    &#123;</div><div class="line">        danger=0;</div><div class="line">        //距离认知和自我认知</div><div class="line">        if(IQ&gt;30)&#123;</div><div class="line">            //5 视野</div><div class="line">            danger=100/dis; //20+ ...100+</div><div class="line">            switch (weapon_get)</div><div class="line">            &#123;</div><div class="line">                case 0: power += 0f; break;</div><div class="line">                case 1: power += 20f; break;</div><div class="line">                case 2: power += 10f + 10f*weapon_ammo; break;</div><div class="line">                case 3: power += 20f; break;</div><div class="line">                case 4: power += 10f + 20f * weapon_ammo; break;</div><div class="line">                case 5: power += 10f + 7f * weapon_ammo; break;</div><div class="line">                case 6: power += 10f + 15f * weapon_ammo; break;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        else &#123; danger = Random.Range(10f, 50f); power = Random.Range(0, 100f); &#125;</div><div class="line">        //敌人认知</div><div class="line">        if (IQ &gt; 60)</div><div class="line">        &#123;</div><div class="line">            switch (emeny.GetComponent&lt;Player&gt;().weapon_now)</div><div class="line">            &#123;</div><div class="line">                case 0: danger += 0f; break;</div><div class="line">                case 1: danger += 20f; break;</div><div class="line">                case 2: danger += 50f; break;</div><div class="line">                case 3: danger += 15f; break;</div><div class="line">                case 4: danger += 70f; break;</div><div class="line">                case 5: danger += 100f; break;</div><div class="line">                case 6: danger += 50f; break;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        else &#123; danger = Random.Range(0f, 50f); &#125;</div><div class="line">        if (weapon_now != weapon_get &amp;&amp; IQ &lt; 80) &#123; ChangeWeapon(); &#125;</div><div class="line">        //power:0-200  执行的能力(执行的几率)</div><div class="line">        //danger:0-200 执行的必要性</div><div class="line">        if (Random.Range(1 - brave, 1 + brave) &lt; (danger - 200 / power))</div><div class="line">        &#123;</div><div class="line">            float range = AI_GetWeaponRange();</div><div class="line">            if(IQ&gt;60)&#123;</div><div class="line">                if (weapon_get!=0&amp;&amp;weapon_ammo &lt;= 0 &amp;&amp; range &lt; dis&amp;&amp;danger&gt;80f)</div><div class="line">                    if (weapon_now != weapon_get) &#123; ChangeWeapon(); &#125;</div><div class="line">                    ThrowWeapon();</div><div class="line">            &#125;</div><div class="line">            RAttack();</div><div class="line">        &#125;</div><div class="line">    &#125;break;</div></pre></td></tr></table></figure>
+<p>一个不错的但是吃1MB内存，舍弃<br>应该简单些的</p>
+<h2 id="22-02-37"><a href="#22-02-37" class="headerlink" title="22:02:37:"></a>22:02:37:</h2><p>额，更新AI<br>攻击多样化完成</p>
+<h2 id="22-52-10"><a href="#22-52-10" class="headerlink" title="22:52:10:"></a>22:52:10:</h2><p>障碍物动态更新有问题</p>
+<h2 id="00-43-18"><a href="#00-43-18" class="headerlink" title="00:43:18:"></a>00:43:18:</h2><p>天啊，还是没解决那个问题<br>开发结束</p>
+<hr>
+<h1 id="2016年4月4日-星期一"><a href="#2016年4月4日-星期一" class="headerlink" title="2016年4月4日 星期一"></a>2016年4月4日 星期一</h1><h2 id="10-27-03"><a href="#10-27-03" class="headerlink" title="10:27:03:"></a>10:27:03:</h2><p>已经开发一会儿了，问题放弃解决（障碍物动态更新）<br>修复人物入墙问题</p>
+<h2 id="15-58-35"><a href="#15-58-35" class="headerlink" title="15:58:35:"></a>15:58:35:</h2><p>不知道干了什么</p>
+<h2 id="17-49-49"><a href="#17-49-49" class="headerlink" title="17:49:49:"></a>17:49:49:</h2><p>什么都没做，测试了些东西，开发结束</p>
+<hr>
+<h1 id="2016年4月9日-星期六"><a href="#2016年4月9日-星期六" class="headerlink" title="2016年4月9日 星期六"></a>2016年4月9日 星期六</h1><h2 id="18-41-27"><a href="#18-41-27" class="headerlink" title="18:41:27:"></a>18:41:27:</h2><p>开始开发</p>
+<h2 id="19-52-25"><a href="#19-52-25" class="headerlink" title="19:52:25:"></a>19:52:25:</h2><p>开始开发really</p>
+<h2 id="21-22-34"><a href="#21-22-34" class="headerlink" title="21:22:34:"></a>21:22:34:</h2><h2 id="22-36-15"><a href="#22-36-15" class="headerlink" title="22:36:15:"></a>22:36:15:</h2><p>全部用在修复AI上</p>
+<h2 id="00-10-22"><a href="#00-10-22" class="headerlink" title="00:10:22:"></a>00:10:22:</h2><p>更新躲子弹（测试还有问题，明天更新AI拾起武器）<br>结束</p>
+<hr>
+<h1 id="2016年4月10日-星期日"><a href="#2016年4月10日-星期日" class="headerlink" title="2016年4月10日 星期日"></a>2016年4月10日 星期日</h1><h2 id="09-29-47"><a href="#09-29-47" class="headerlink" title="09:29:47:"></a>09:29:47:</h2><p>更新成功→AI防御</p>
+<hr>
+<h1 id="2016年7月31日-1"><a href="#2016年7月31日-1" class="headerlink" title="2016年7月31日"></a>2016年7月31日</h1><h2 id="08-47-27"><a href="#08-47-27" class="headerlink" title="08:47:27:"></a>08:47:27:</h2><p>很长一段时间没记了，之前开发了很久的 <em>MAIFA</em><br>记一些大更新：<br>AI优化→从射线模拟视野改成了将敌人、物体放入字典，查字典找距离和角度<br>这个优化也证明了之前的挺不错的AI是好的……</p>
+<p>加入调试窗口，有很多便捷的API来进行调试，包括文字显示，按钮等<br>加入名字的lable，但现在还不能改名字…</p>
+<p>多人游戏优化修BUG，移动改为定速，优化各种恶心的问题<br>修改了很多判定：比如说子弹改为客户端判定，其他同步；而近战由客户端判定，生效同时发送给服务端再广播，然后导致看到死人在地上移动的BUG（还未处理）<br>目前多人游戏还有问题：延迟？和一些不同步出错<br>延迟可以让你隔了一段距离都被打死，很无语</p>
+<p>修复电脑的抖动，API:LookAround<br>为了修复这个问题，花了我接近2、3个小时<br>不停地找旋转因素<br>最后找到：LookAround,AiLerp,AI(有三处),GameBase.Update<br>LookAround最初编写时出了一个很有趣的问题[2016年5月28日.gif]</p>
+<p>重写了一些多人模块，加入NetPlayer，这个想法还是来自于<em>MAFIA</em><br>有了这个好得多，写起来限制变少了<br>加入插件：ColorFulX<br>一个摄像机特效插件，有了红血，抖动，变白，放大等视觉特效</p>
+<p>更改移动脚步，不再用CharactorContraller2D<br>改用RigiBody，然后，大多数问题都解决了，随便将武器、子弹都改了</p>
+<p>新增HP概念，将一击必杀改为减少HP，配上视觉特效，挺不错的</p>
+<p>AI什么的一系列已经差不多了，大体可以完成玩家的一系列动作(甚至更NB，详见[2016-4-10-1.gif])，等着更新不同种类的AI，例如：平民AI，警察AI</p>
+<p>另外很多杂七杂八的，例如：加入弹壳、修复拳头等我就不写了</p>
+<hr>
+<h1 id="2016年8月3日星期三"><a href="#2016年8月3日星期三" class="headerlink" title="2016年8月3日星期三"></a>2016年8月3日星期三</h1><h2 id="18-18-56"><a href="#18-18-56" class="headerlink" title="18:18:56:"></a>18:18:56:</h2><p>测试：<br>用一台电脑测试了一下，延迟还是个问题，电脑和别人可以在以前的位置把你打死<br>出现一个旋转问题，人被拉缩成片？电脑打不死人，应该是子弹归属判定问题，<br>有个站着死的，是”getup5”，估计是Die(0);造成的，散弹击中敌人不飞那么远了？</p>
+<h2 id="19-17-18"><a href="#19-17-18" class="headerlink" title="19:17:18:"></a>19:17:18:</h2><p>已解决：<br>电脑子弹打不死人：子弹不是服务器物体，不能用isserver<br>人被拉缩成片：可能是transform.up让x,y都发生了旋转，已改，未测试<br>散弹击中敌人不飞那么远了：<br>还是能飞的，在之前某次修复中，把40%的bug修复了，现在看来，应该飞远些…….</p>
+<h2 id="19-23-38"><a href="#19-23-38" class="headerlink" title="19:23:38:"></a>19:23:38:</h2><p>No, 人被拉缩成片还存在，貌似与玩家水平时发生？<br>第二次修复：将返回值x,y变为0</p>
+<h2 id="19-29-39"><a href="#19-29-39" class="headerlink" title="19:29:39:"></a>19:29:39:</h2><p>人被拉缩成片—修复<br>散弹击飞，还是有问题，似乎以前是多颗子弹击中？（刚刚解决）<br>新问题：特效过渡，血变蓝</p>
+<h2 id="19-47-47"><a href="#19-47-47" class="headerlink" title="19:47:47:"></a>19:47:47:</h2><p>测试了下，血变蓝是由于受两次伤，服务器转发时多执行了一次<br>修改：修复上面那个问题，另外如果damage&gt;health，则damage=health<br>嗯……现在问题就是延迟了: (<br>这个恶心的问题<br>解决方案：<br>现在：<br>0——&gt;0 实际<br>0——&gt;0          服务器<br>打算改成：<br>0　　　　0?????0           实际<br>0——&gt; 0====&gt;0          服务器（等号为推演）<br>下次完成，这次先完成其他的</p>
+<h2 id="19-57-07-什么都没做"><a href="#19-57-07-什么都没做" class="headerlink" title="19:57:07:什么都没做"></a>19:57:07:什么都没做</h2><h2 id="23-01-25"><a href="#23-01-25" class="headerlink" title="23:01:25:"></a>23:01:25:</h2><p>完成FindFleePoint算法</p>
+<hr>
+<h1 id="2016年8月4日星期四"><a href="#2016年8月4日星期四" class="headerlink" title="2016年8月4日星期四"></a>2016年8月4日星期四</h1><h2 id="00-23-06"><a href="#00-23-06" class="headerlink" title="00:23:06:"></a>00:23:06:</h2><p>思考感官方式</p>
+<h2 id="11-04-28"><a href="#11-04-28" class="headerlink" title="11:04:28:"></a>11:04:28:</h2><p>视觉和听觉两方面，但是要确定事件不同步<br>机制：</p>
+<ol>
+<li>AI的视线判断</li>
+<li>广播投掷<br>考虑了一下，将视线发生器加入到广播投掷，投掷时只需要参数确定是否含视觉、听觉<h2 id="12-32-25"><a href="#12-32-25" class="headerlink" title="12:32:25:"></a>12:32:25:</h2>思考平民AI消耗<h2 id="13-16-26"><a href="#13-16-26" class="headerlink" title="13:16:26:"></a>13:16:26:</h2>开始编写EventPost<br>思考了同步的问题，将类改为结构体<h2 id="17-37-02"><a href="#17-37-02" class="headerlink" title="17:37:02:"></a>17:37:02:</h2>未完……</li>
+</ol>
+<blockquote>
+<p>以上便是Word文档的全部内容了<br>如果发现有什么格式错误请告诉我，格式是后面加上去的</p>
+</blockquote>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/HLM/" rel="tag"># HLM</a>
+          
+            <a href="/tags/自制/" rel="tag"># 自制</a>
+          
+            <a href="/tags/游戏/" rel="tag"># 游戏</a>
+          
+            <a href="/tags/Unity/" rel="tag"># Unity</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/08/05/HLM 开发日志 Word-01/" rel="next" title="HLM 开发日志 Word-01">
+                <i class="fa fa-chevron-left"></i> HLM 开发日志 Word-01
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/08/06/一些可供学习的像素画/" rel="prev" title="一些可供学习的像素画">
+                一些可供学习的像素画 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="https://ss0.bdstatic.com/7Ls0a8Sm1A5BphGlnYG/sys/portrait/item/677b706737676f4710"
+               alt="PG7GO" />
+          <p class="site-author-name" itemprop="name">PG7GO</p>
+           
+              <p class="site-description motion-element" itemprop="description">Indie</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/pg7go" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                    
+                      Twitter
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://facebook.com/pg7go" target="_blank" title="FaceBook">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                    
+                      FaceBook
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/pg7go" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                    
+                      GitHub
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="Mailto:test@163.com" target="_blank" title="邮箱">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                    
+                      邮箱
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://wpa.qq.com/msgrd?v=3&uin=1025385065&site=qq&menu=yes" target="_blank" title="QQ">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                    
+                      QQ
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.baidu.com/p/pg7go" target="_blank" title="贴吧">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                    
+                      贴吧
+                    
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HLM-开发日志-续"><span class="nav-number">1.</span> <span class="nav-text">HLM 开发日志 续</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#建议从第一篇看起-点击此处查看此系列"><span class="nav-number">2.</span> <span class="nav-text">建议从第一篇看起,点击此处查看此系列</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2016年7月31日"><span class="nav-number">3.</span> <span class="nav-text">2016年7月31日</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#08-44-00"><span class="nav-number">3.1.</span> <span class="nav-text">08:44:00:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#21-52-14"><span class="nav-number">3.2.</span> <span class="nav-text">21:52:14:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#23-32-12"><span class="nav-number">3.3.</span> <span class="nav-text">23:32:12:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#23-53-37"><span class="nav-number">3.4.</span> <span class="nav-text">23:53:37:</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2016年3月27日-星期日"><span class="nav-number">4.</span> <span class="nav-text">2016年3月27日 星期日</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#11-09-19"><span class="nav-number">4.1.</span> <span class="nav-text">11:09:19:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-39-47"><span class="nav-number">4.2.</span> <span class="nav-text">11:39:47:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#12-37-22"><span class="nav-number">4.3.</span> <span class="nav-text">12:37:22:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#16-20-06"><span class="nav-number">4.4.</span> <span class="nav-text">16:20:06:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#17-15-18"><span class="nav-number">4.5.</span> <span class="nav-text">17:15:18:</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2016年3月28日-星期一"><span class="nav-number">5.</span> <span class="nav-text">2016年3月28日 星期一</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#09-54-17"><span class="nav-number">5.1.</span> <span class="nav-text">09:54:17:</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2016年4月2日-星期六"><span class="nav-number">6.</span> <span class="nav-text">2016年4月2日 星期六</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#22-14-45"><span class="nav-number">6.1.</span> <span class="nav-text">22:14:45:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#00-16-31"><span class="nav-number">6.2.</span> <span class="nav-text">00:16:31:</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2016年4月3日-星期日"><span class="nav-number">7.</span> <span class="nav-text">2016年4月3日 星期日</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#08-13-55"><span class="nav-number">7.1.</span> <span class="nav-text">08:13:55:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#09-01-48"><span class="nav-number">7.2.</span> <span class="nav-text">09:01:48:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-21-52"><span class="nav-number">7.3.</span> <span class="nav-text">11:21:52:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#14-17-22"><span class="nav-number">7.4.</span> <span class="nav-text">14:17:22:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#15-29-34"><span class="nav-number">7.5.</span> <span class="nav-text">15:29:34:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#17-05-31"><span class="nav-number">7.6.</span> <span class="nav-text">17:05:31:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#19-01-52"><span class="nav-number">7.7.</span> <span class="nav-text">19:01:52:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#22-02-37"><span class="nav-number">7.8.</span> <span class="nav-text">22:02:37:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#22-52-10"><span class="nav-number">7.9.</span> <span class="nav-text">22:52:10:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#00-43-18"><span class="nav-number">7.10.</span> <span class="nav-text">00:43:18:</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2016年4月4日-星期一"><span class="nav-number">8.</span> <span class="nav-text">2016年4月4日 星期一</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#10-27-03"><span class="nav-number">8.1.</span> <span class="nav-text">10:27:03:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#15-58-35"><span class="nav-number">8.2.</span> <span class="nav-text">15:58:35:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#17-49-49"><span class="nav-number">8.3.</span> <span class="nav-text">17:49:49:</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2016年4月9日-星期六"><span class="nav-number">9.</span> <span class="nav-text">2016年4月9日 星期六</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#18-41-27"><span class="nav-number">9.1.</span> <span class="nav-text">18:41:27:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#19-52-25"><span class="nav-number">9.2.</span> <span class="nav-text">19:52:25:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#21-22-34"><span class="nav-number">9.3.</span> <span class="nav-text">21:22:34:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#22-36-15"><span class="nav-number">9.4.</span> <span class="nav-text">22:36:15:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#00-10-22"><span class="nav-number">9.5.</span> <span class="nav-text">00:10:22:</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2016年4月10日-星期日"><span class="nav-number">10.</span> <span class="nav-text">2016年4月10日 星期日</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#09-29-47"><span class="nav-number">10.1.</span> <span class="nav-text">09:29:47:</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2016年7月31日-1"><span class="nav-number">11.</span> <span class="nav-text">2016年7月31日</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#08-47-27"><span class="nav-number">11.1.</span> <span class="nav-text">08:47:27:</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2016年8月3日星期三"><span class="nav-number">12.</span> <span class="nav-text">2016年8月3日星期三</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#18-18-56"><span class="nav-number">12.1.</span> <span class="nav-text">18:18:56:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#19-17-18"><span class="nav-number">12.2.</span> <span class="nav-text">19:17:18:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#19-23-38"><span class="nav-number">12.3.</span> <span class="nav-text">19:23:38:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#19-29-39"><span class="nav-number">12.4.</span> <span class="nav-text">19:29:39:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#19-47-47"><span class="nav-number">12.5.</span> <span class="nav-text">19:47:47:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#19-57-07-什么都没做"><span class="nav-number">12.6.</span> <span class="nav-text">19:57:07:什么都没做</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#23-01-25"><span class="nav-number">12.7.</span> <span class="nav-text">23:01:25:</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2016年8月4日星期四"><span class="nav-number">13.</span> <span class="nav-text">2016年8月4日星期四</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#00-23-06"><span class="nav-number">13.1.</span> <span class="nav-text">00:23:06:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-04-28"><span class="nav-number">13.2.</span> <span class="nav-text">11:04:28:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#12-32-25"><span class="nav-number">13.3.</span> <span class="nav-text">12:32:25:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#13-16-26"><span class="nav-number">13.4.</span> <span class="nav-text">13:16:26:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#17-37-02"><span class="nav-number">13.5.</span> <span class="nav-text">17:37:02:</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">PG7GO</span>
+</div>
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      你好，第
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      个小伙伴
+    </span>
+  
+
+  
+    <span class="site-pv">
+      这里已经被逛了
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次
+    </span>
+  
+</div>
+
+
+        
+      </div>
+    </footer>
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://pg7go.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://yoursite.com/2016/08/05/HLM 开发日志 Word-02/';
+          this.page.identifier = '2016/08/05/HLM 开发日志 Word-02/';
+          this.page.title = 'HLM 开发日志 Word-02';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://pg7go.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
