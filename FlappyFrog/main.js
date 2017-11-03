@@ -689,5 +689,4 @@ function init(options) {
 initGame = init;
 })();
 
-var initGame;
-</=></=>
+var initGame;</=></=>
