@@ -46,9 +46,12 @@ if(!editType){
    editType = document.getElementById("studenttable").rows[0].cells[element.cellIndex].getAttribute("EditType"); 
    //editType="TextBox";//强改一波
 }    
+
+var InType=document.getElementById("studenttable").rows[0].cells[element.cellIndex].getAttribute("InType");
+
 switch(editType){    
    case "TextBox":    
-    CreateTextBox(element, element.innerHTML);    
+    CreateTextBox(element, element.innerHTML,InType);    
     break;    
    case "DropDownList":    
     CreateDropDownList(element);    
@@ -79,13 +82,15 @@ switch(editType){
 }    
     
 //为单元格创建可编辑输入框    
-function CreateTextBox(element, value){    
+function CreateTextBox(element, value,InType){    
 //检查编辑状态，如果已经是编辑状态，跳过    
 var editState = element.getAttribute("EditState");    
 if(editState != "true"){    
    //创建文本框    
    var textBox = document.createElement("INPUT");    
-   textBox.type = "text";    
+   if(InType=="String"){textBox.type = "text";}
+   else{textBox.type = "number";}
+       
    textBox.className="input-inner";    
       
       
@@ -398,6 +403,7 @@ element.setAttribute("EditState", "false");
 
 function delTHisRow(e)
 {
+	if(e.getAttribute("onEdit")!= "true")
 	_delTable(e.parentNode.parentNode);
 	var row=document.getElementById("studenttable").deleteRow(getRowId(e));
 }

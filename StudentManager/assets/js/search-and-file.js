@@ -81,6 +81,7 @@ function showWhatFinded(rows)
 			table.tBodies[0].appendChild(newRoll);
 		}
 	}
+	$("#studenttable").tablesorter();
 }
 
 function getScoreSum(row)
