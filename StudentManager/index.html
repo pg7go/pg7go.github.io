@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <title>学生成绩管理系统</title>
+    <!-- BOOTSTRAP CORE STYLE  -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONT AWESOME ICONS  -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- CUSTOM STYLE  -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    
+</head>
+<body>
+
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                        <h1 class="page-head-line">学生成绩管理系统</h1>
+                        
+               </div>
+               
+            </div>
+            
+            	<!--   table -->
+    			<div class="panel panel-default">
+                        <div class="panel-heading">
+                        	
+                        	<button onclick=AddRow(document.getElementById('studenttable'),1) class="btn btn-success btn-long" id="new" >新建</button>
+							<button onclick=tsaveAs() class="btn btn-success btn-long" id="new" >导出</button>
+							<a href="javascript:;" class="a-upload btn btn-success btn-long"><input type="file" id="upload" />点击这里上传文件</a>
+							<button onclick=tloadFrom() class="btn btn-success btn-long" id="new" >导入</button>
+							<div class="right">
+                            <lable>学生查询：  </label>
+                        	<input type="text" id="input" class="input" />
+                            	<div class="btn-group">
+											  <button data-toggle="dropdown" class="btn btn-info dropdown-toggle">查询方式 <span class="caret"></span></button>
+											  <ul class="dropdown-menu">
+												<li class="pointer"><a onclick=searchByName()>姓名查询</a></li>
+												<li class="divider"></li>
+												<li class="pointer"><a onclick=searchById()>学号查询</a></li>
+											  </ul>
+								</div>
+							<button onclick=getbackTable() class="btn btn-info btn-long">显示全部</button>
+                         	</div>
+                        
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover" id="studenttable">
+                                    <thead>
+                                        <tr>
+                                            <th EditType="TextBox">学号</th>
+                                            <th EditType="TextBox">姓名</th>
+                                            <th EditType="TextBox" name="chinese">语文</th>
+                                            <th EditType="TextBox" name="math">数学</th>
+                                            <th EditType="TextBox" name="english">英语</th>
+                                            <th Expression="chinese+math+english" name="all">总分</th>
+                                            <th Expression="all/3" Format="#,###.00">平均分</th>
+                                            <th EditType="Button" Format="#,###.00">操作 (点击表头排序)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr tid=0>
+                                            <td>001</td>
+                                            <td>小明</td>
+                                            <td>98</td>
+                                            <td>85</td>
+                                            <td>72</td>
+                                            <td>255</td>
+                                            <td>85.00</td>
+                                            <td>
+                                            	<a onclick=editTHisRow(this) class="btn btn-success" name="edit">编辑</button>
+                                            	<a onclick=delTHisRow(this) class="btn btn-danger" name="del">删除</button>
+                                            </td>
+                                        </tr>
+                                        <tr tid=1>
+                                            <td>002</td>
+                                            <td>小芳</td>
+                                            <td>100</td>
+                                            <td>78</td>
+                                            <td>88</td>
+                                            <td>266</td>
+                                            <td>88.66</td>
+                                            <td>
+                                            	<a onclick=editTHisRow(this) class="btn btn-success" name="edit">编辑</button>
+                                            	<a onclick=delTHisRow(this) class="btn btn-danger" name="del">删除</button>
+                                            </td>
+                                        </tr>
+                                        <tr tid=2>
+                                            <td>003</td>
+                                            <td>小王</td>
+                                            <td>75</td>
+                                            <td>86</td>
+                                            <td>92</td>
+                                            <td>253</td>
+                                            <td>84.33</td>
+                                            <td>
+                                            	<a onclick=editTHisRow(this) class="btn btn-success" name="edit">编辑</button>
+                                            	<a onclick=delTHisRow(this) class="btn btn-danger" name="del">删除</button>
+                                            </td>
+                                        </tr>
+                                        <tr tid=3>
+                                            <td>004</td>
+                                            <td>小迪</td>
+                                            <td>38</td>
+                                            <td>50</td>
+                                            <td>59</td>
+                                            <td>147</td>
+                                            <td>49.00</td>
+                                            <td>
+                                            	<a onclick=editTHisRow(this) class="btn btn-success" name="edit">编辑</button>
+                                            	<a onclick=delTHisRow(this) class="btn btn-danger" name="del">删除</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    <div style="color: #d9534f; text-align: center;font-weight: bold;"><p id="nofound" ></p></div>
+    			</div>
+    			<!-- table end -->
+    			
+            
+                <div class="row">
+        <div class="col-md-4 col-sm-4">
+    		<div class="panel panel-success">
+        	<div class="panel-heading">
+            语文 统计
+        	</div>
+        	<div class="panel-body">
+            <p id="a-a"></p>
+        	</div>
+       		 	<div class="panel-footer" id="a-b">
+            	Panel Footer
+        		</div>
+    		</div>
+		</div>
+        <div class="col-md-4 col-sm-4">
+    		<div class="panel panel-success">
+        	<div class="panel-heading">
+            数学 统计
+        	</div>
+        	<div class="panel-body">
+            <p id="b-a"></p>
+        	</div>
+       		 	<div class="panel-footer" id="b-b">
+            	Panel Footer
+        		</div>
+    		</div>
+		</div>
+		        <div class="col-md-4 col-sm-4">
+    		<div class="panel panel-success">
+        	<div class="panel-heading">
+            英语 统计
+        	</div>
+        	<div class="panel-body">
+            <p id="c-a"></p>
+        	</div>
+       		 	<div class="panel-footer" id="c-b">
+            	Panel Footer
+        		</div>
+    		</div>
+		</div>
+	</div>
+            
+            
+        </div>
+    </div>
+
+
+    <!-- CONTENT-WRAPPER SECTION END-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    &copy; PG7GO | 返回Blog : <a href="http://pg7go.vicp.net/" target="_blank">http://pg7go.vicp.net/</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION END-->
+    <!-- JAVASCRIPT AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY SCRIPTS -->
+    <script src="assets/js/jquery-1.11.1.js"></script>
+    <!-- BOOTSTRAP SCRIPTS  -->
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/manager.js"></script>
+    <script src="assets/js/jquery.tablesorter.min.js"></script>
+    <script src="assets/js/edit.js"></script>
+	<script src="assets/js/search-and-file.js"></script>
+</body>
+</html>
