@@ -22,88 +22,7 @@ function _addTable(row)
 }
 function _delTable(row)
 {
-	for(var i=1;i<mytable.rows.length;i++)
-	{
-		if(mytable.rows[i].getAttribute("tid")==row.getAttribute("tid"))
-		{
-			mytable.deleteRow(i);
-			return;
-		}
-	}
-	refresh();
-}
-
-function searchByName()
-{
-	saveAllValues();
-	id=document.getElementById("input").value;
-	var rows=new Array();
-	var index=0;
-	for(var i=1;i<mytable.rows.length;i++)
-	{
-		if(mytable.rows[i].cells[1].innerHTML.search(eval("/"+id+"/i"))!=-1)
-		{
-			rows[index++]=mytable.rows[i];
-		}
-	}
-
-	showWhatFinded(rows);
-}
-function searchById()
-{
-	saveAllValues();
-	id=document.getElementById("input").value;
-	var rows=new Array();
-	var index=0;
-	for(var i=1;i<mytable.rows.length;i++)
-	{
-		if(mytable.rows[i].cells[0].innerHTML.search(eval("/"+id+"/i"))!=-1)
-		{
-			rows[index++]=mytable.rows[i];
-		}
-	}
-	showWhatFinded(rows);
-}
-function showWhatFinded(rows)
-{
-	var table=document.getElementById("studenttable");
-	table.tBodies[0].innerText="";
-	if(rows==0)
-	{
-		document.getElementById("nofound").innerHTML="没有找到相关信息";
-	}
-	else
-	{
-		document.getElementById("nofound").innerHTML="";
-		for(var i=0;i<rows.length;i++)
-		{
-			var newRoll=rows[i].cloneNode(true);
-			table.tBodies[0].appendChild(newRoll);
-		}
-	}
-	$("#studenttable").tablesorter();
-}
-
-function getScoreSum(row)
-{
-	var a=0
-	var table=document.getElementById("studenttable");
-		for(var i=1;i<table.rows.length;i++)
-		{
-			var num=table.rows[i].cells[row].innerHTML;
-			a+=(num*1.0);
-		}
-	return "课程总分："+a+"   平均："+(a/(table.rows.length-1)).toFixed(2);
-}
-
-function getScoreData(row)
-{
-	var a=0,b=0,c=0,d=0,e=0;
-	var table=document.getElementById("studenttable");
-		for(var i=1;i<table.rows.length;i++)
-		{
-			var num=table.rows[i].cells[row].innerHTML;
-			if(num>=90)
+	for(var i=1;i<mytable.rows.length;i++) {="" if(mytable.rows[i].getattribute("tid")="=row.getAttribute("tid"))" mytable.deleterow(i);="" return;="" }="" refresh();="" function="" searchbyname()="" saveallvalues();="" id="document.getElementById("input").value;" var="" rows="new" array();="" index="0;" for(var="" i="1;i<mytable.rows.length;i++)" if(mytable.rows[i].cells[1].innerhtml.search(eval("="" "+id+"="" i"))!="-1)" rows[index++]="mytable.rows[i];" showwhatfinded(rows);="" searchbyid()="" if(mytable.rows[i].cells[0].innerhtml.search(eval("="" showwhatfinded(rows)="" table="document.getElementById("studenttable");" table.tbodies[0].innertext="" ;="" if(rows="=0)" document.getelementbyid("nofound").innerhtml="没有找到相关信息" else="" newroll="rows[i].cloneNode(true);" table.tbodies[0].appendchild(newroll);="" $("#studenttable").tablesorter();="" getscoresum(row)="" a="0" num="table.rows[i].cells[row].innerHTML;" a+="(num*1.0);" return="" "课程总分："+a+"="" 平均："+(a="" (table.rows.length-1)).tofixed(2);="" getscoredata(row)="" if(num="">=90)
 			a++;
 			else if(num>=80)
 			b++;
@@ -182,4 +101,4 @@ function tloadFrom()
       refresh();
     };
     reader.readAsText(file);
-  }
+  }</mytable.rows.length;i++)>
